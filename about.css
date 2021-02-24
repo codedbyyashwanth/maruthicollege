@@ -196,4 +196,348 @@ main .about-section::before {
     z-index: -1;
   }
 }
+
+main .abt-institution {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+main .abt-institution .insti-info {
+  margin: 30px;
+  margin-bottom: 10px;
+}
+
+main .abt-institution .insti-info h1 {
+  font-size: clamp(30px, 3vw, 35px);
+  color: #2979FF;
+}
+
+main .abt-institution .insti-info p {
+  margin-top: 30px;
+  width: 30vw;
+  font-size: clamp(14px, 2vw, 16px);
+  min-width: 300px;
+  max-width: 600px;
+}
+
+@media (max-width: 700px) {
+  main .abt-institution .insti-info {
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+}
+
+main .abt-institution .source {
+  margin: 30px;
+  margin-top: 20px;
+}
+
+main .abt-institution .source img {
+  height: 30vw;
+  min-height: 220px;
+  max-height: 350px;
+}
+
+@media (max-width: 376px) {
+  main .abt-institution .source {
+    margin: 10px;
+    margin-top: 20px;
+  }
+  main .abt-institution .source img {
+    height: 25vw;
+    min-height: 200px;
+    max-height: 400px;
+  }
+  main .abt-institution .insti-info {
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+  main .abt-institution .insti-info h1 {
+    font-size: clamp(25px, 3vw, 35px);
+    color: #2979FF;
+  }
+  main .abt-institution .insti-info p {
+    min-width: 260px;
+    max-width: 600px;
+  }
+}
+
+main {
+  /* Slideshow container */
+}
+
+main .slideshow-container {
+  overflow: hidden;
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  /* Hide the images by default */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Fading animation */
+}
+
+main .slideshow-container .mySlides {
+  text-align: center;
+  display: none;
+  height: 300px;
+  z-index: -1;
+}
+
+main .slideshow-container .mySlides img {
+  width: 100%;
+  top: -10vw;
+  z-index: -1;
+  position: relative;
+}
+
+main .slideshow-container .prev, main .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+main .slideshow-container .prev:hover, main .slideshow-container .next:hover {
+  background-color: #2979FF;
+}
+
+main .slideshow-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  main .slideshow-container .mySlides {
+    text-align: center;
+    display: none;
+    height: 250px;
+    z-index: -1;
+  }
+  main .slideshow-container .mySlides .text {
+    font-size: 20px;
+  }
+  main .slideshow-container .mySlides img {
+    min-height: 350px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  main .slideshow-container {
+    width: 90%;
+  }
+}
+
+main .intro-part h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: clamp(20px, 3.5vw, 30px);
+  margin-top: 50px;
+  color: #2979FF;
+}
+
+main .intro-part p {
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+  font-size: clamp(14px, 0.8vw, 30px);
+  margin: auto;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+main .features {
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 10px;
+  background-color: #2979FF;
+  padding-bottom: 40px;
+}
+
+main .features .intro-part h1 {
+  font-size: clamp(25px, 3.5vw, 40px);
+}
+
+main .f-points {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #fafafa;
+  margin-top: 30px;
+}
+
+main .f-points .points {
+  padding: 30px;
+  line-height: 1.6;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main .f-points .points ion-icon {
+  font-size: 60px;
+}
+
+main .f-points .points h1 {
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: clamp(20px, 3.5vw, 30px);
+}
+
+main .f-points .points p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: clamp(14px, 0.8vw, 30px);
+  width: 20vw;
+  min-width: 350px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer h2 {
+  color: #3c3c3c;
+}
+
+footer .f-content-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .f-content-part .cllge-info, footer .f-content-part .links, footer .f-content-part .contact-info {
+  width: 300px;
+}
+
+footer .f-content-part .cllge-info h2, footer .f-content-part .links h2, footer .f-content-part .contact-info h2 {
+  font-size: 18px;
+}
+
+footer .f-content-part .cllge-info li, footer .f-content-part .links li, footer .f-content-part .contact-info li {
+  font-size: 14px;
+}
+
+footer .f-content-part .cllge-info {
+  margin: 10px;
+}
+
+footer .f-content-part .cllge-info img {
+  width: 60px;
+}
+
+footer .f-content-part .cllge-info p {
+  font-size: 14px;
+  width: 25vw;
+  min-width: 300px;
+  margin-top: 6px;
+}
+
+footer .f-content-part .links {
+  margin: 10px;
+}
+
+footer .f-content-part .links ul {
+  margin-top: 6px;
+  list-style-type: none;
+  line-height: 1.8;
+}
+
+footer .f-content-part .links ul a {
+  color: black;
+  text-decoration: none;
+}
+
+footer .f-content-part .contact-info {
+  margin: 10px;
+}
+
+footer .f-content-part .contact-info ul {
+  margin-top: 6px;
+  list-style-type: none;
+  line-height: 1.8;
+}
+
+footer .dev-part {
+  width: 100%;
+  text-align: center;
+  background-color: #2979FF;
+  color: white;
+}
+
+footer .dev-part h3 {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
 /*# sourceMappingURL=about.css.map */

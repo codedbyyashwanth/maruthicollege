@@ -408,6 +408,7 @@ footer .f-content-part {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 30px;
 }
 
 footer .f-content-part .cllge-info, footer .f-content-part .links, footer .f-content-part .contact-info {

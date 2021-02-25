@@ -20,6 +20,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Montserrat", sans-serif;
+  z-index: 10;
   background-color: #fff;
 }
 
@@ -129,5 +130,222 @@ header .menu {
     color: #fafafa;
     background-color: #292929;
   }
+}
+
+main .about-section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+main .about-section .content-in {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  color: #fafafa;
+}
+
+main .about-section .content-in h2 {
+  font-size: clamp(30px, 3vw, 50px);
+}
+
+main .about-section .content-in p {
+  width: 40vw;
+  font-size: clamp(14px, 1vw, 20px);
+  min-width: 300px;
+  margin-top: 20px;
+}
+
+main .about-section .img-in {
+  position: relative;
+  top: -200px;
+  z-index: -1;
+  height: 400px;
+}
+
+main .about-section .img-in img {
+  z-index: -1;
+  width: 100%;
+}
+
+main .about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2978ff8c), to(#2978ff8c));
+  background: linear-gradient(#2978ff8c, #2978ff8c);
+}
+
+@media (max-width: 1000px) {
+  main .about-section .content-in {
+    left: 6%;
+  }
+  main .about-section .img-in {
+    position: relative;
+    top: 0px;
+    z-index: -1;
+    height: 300px;
+  }
+  main .about-section .img-in img {
+    min-height: 300px;
+    z-index: -1;
+  }
+}
+
+main .intro-part h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: clamp(20px, 3.5vw, 30px);
+  margin-top: 50px;
+  color: #2979FF;
+}
+
+main .gallery {
+  width: 90%;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  margin-top: 30px;
+}
+
+main .gallery .image {
+  width: 300px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+main .gallery .image img {
+  width: 100%;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+main .gallery .image img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media (max-width: 1070px) {
+  main .gallery {
+    width: 100%;
+  }
+  main .gallery .image {
+    width: 400px;
+  }
+}
+
+@media (max-width: 835px) {
+  main .gallery {
+    width: 100%;
+  }
+  main .gallery .image {
+    width: 90%;
+  }
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer h2 {
+  color: #3c3c3c;
+}
+
+footer .f-content-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
+}
+
+footer .f-content-part .cllge-info, footer .f-content-part .links, footer .f-content-part .contact-info {
+  width: 300px;
+}
+
+footer .f-content-part .cllge-info h2, footer .f-content-part .links h2, footer .f-content-part .contact-info h2 {
+  font-size: 18px;
+}
+
+footer .f-content-part .cllge-info li, footer .f-content-part .links li, footer .f-content-part .contact-info li {
+  font-size: 14px;
+}
+
+footer .f-content-part .cllge-info {
+  margin: 10px;
+}
+
+footer .f-content-part .cllge-info img {
+  width: 60px;
+}
+
+footer .f-content-part .cllge-info p {
+  font-size: 14px;
+  width: 25vw;
+  min-width: 300px;
+  margin-top: 6px;
+}
+
+footer .f-content-part .links {
+  margin: 10px;
+}
+
+footer .f-content-part .links ul {
+  margin-top: 6px;
+  list-style-type: none;
+  line-height: 1.8;
+}
+
+footer .f-content-part .links ul a {
+  color: black;
+  text-decoration: none;
+}
+
+footer .f-content-part .contact-info {
+  margin: 10px;
+}
+
+footer .f-content-part .contact-info ul {
+  margin-top: 6px;
+  list-style-type: none;
+  line-height: 1.8;
+}
+
+footer .dev-part {
+  width: 100%;
+  text-align: center;
+  background-color: #2979FF;
+  color: white;
+}
+
+footer .dev-part h3 {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=gallery.css.map */

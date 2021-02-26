@@ -227,11 +227,11 @@ main .form-content .form {
 
 main .form-content .form h1 {
   color: #2979FF;
-  font-size: clamp(25px, 4vw, 40px);
+  font-size: clamp(30px, 4vw, 40px);
 }
 
 main .form-content .form .input {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -288,6 +288,18 @@ main .form-content .form #button {
 
 main .form-content .form #button:hover {
   background-color: #081222;
+}
+
+@media (max-width: 540px) {
+  main .form-content .form .input input {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 10px;
+    height: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 main .form-content .contacts .intro h1 {

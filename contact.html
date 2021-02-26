@@ -26,8 +26,71 @@
         <ion-icon id="menu-btn" class="menu" name="menu"></ion-icon>
     </header>
     <main>
-        <h1>This is Contact Page</h1>
+        <!-- https://cdn.pixabay.com/photo/2015/05/12/09/13/social-media-763731_960_720.jpg -->
+        <div class="about-section">
+            <div class="content-in">
+                <h1 style="font-size: clamp(30px,3.5vw,40px);">Having any Questions?</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt ullam magni enim.
+                </p>
+            </div>
+            <div class="img-in">
+                <img src="https://cdn.pixabay.com/photo/2015/05/12/09/13/social-media-763731_960_720.jpg" alt="Image of School">
+            </div>
+        </div>
+        <div class="form-content">
+            <form class="form" action="POST">
+                <h1>Contact Us</h1>
+                <div class="input">
+                    <div class="name">
+                        <input type="text" placeholder="First Name"   required>
+                        <input type="text" placeholder="Last Name"   required>
+                    </div>
+                    <div class="contact">
+                        <input type="email" placeholder="Email"   required>
+                        <input type="number" placeholder="Number"   required>
+                    </div>
+                    <textarea name="message"  placeholder="Message" id="" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit"  id="button" value="SEND MESSAGE">
+            </form>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.375782355168!2d77.77820681482304!3d13.075354190787907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae05bb996b5075%3A0xf3542dafcb66df82!2sSri%20Maruthi%20PU%20college%20hoskote!5e0!3m2!1sen!2sin!4v1614314039103!5m2!1sen!2sin" width="100%" height="500" title="" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </main>
+        <footer>
+        <div class="f-content-part">
+            <div class="cllge-info">
+                <div class="logo">
+                    <img src="http://www.mountcarmel.edu.in/wp-content/uploads/2015/03/mount-carmel-logo.png" alt="School Logo">
+                    <h2>Sri Maruthi PU College</h2>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae architecto magni nisi.</p>
+            </div>
+            <div class="links">
+                <h2>Social Links</h2>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Gmail</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact US</h2>
+                <ul>
+                    <li><ion-icon name="logo-whatsapp"></ion-icon> +91 996992001</li>
+                    <li><ion-icon name="call-outline"></ion-icon> 1800 200 1820</li>
+                    <li><ion-icon name="location-outline"></ion-icon> KHB Colony, Hoskote, Karnataka 562129</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dev-part">
+            <h3>Designed and Developed by Stark Tech Innovative Labs.</h3>
+        </div>
+    </footer>
     <script src="contact.js"></script>
 </body>
 </html>

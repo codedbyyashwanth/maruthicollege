@@ -269,7 +269,7 @@ main .form-content .form .input textarea {
   height: 100px;
 }
 
-main .form-content .form .input input:focus, main .form-content .form .input textarea:focus {
+main .form-content .form .input input:focus, main .form-content .form .input textarea:focus, main .form-content .form .input input:valid {
   border: 2px solid #2979FF;
 }
 
